@@ -18,12 +18,13 @@ public class WebApplicationSteps {
     }
     @When("click on submit")
     public void click_on_submit()throws Throwable {
-        driver.findElement(By.xpath("//input[@id='loginOrderId']"));
-        driver.findElements(By.xpath("//input[@id='password']"));
+        driver.findElement(By.xpath(".//input[@id='loginOrderId']")).sendKeys("105182582");
+        driver.findElement(By.xpath(".//input[@id='password']")).sendKeys("Viji_reddy43");
     }
     @Then("the user should be able to logged in successfully")
     public void the_user_should_be_able_to_logged_in_successfully()
 throws Throwable {
-                driver.findElement(By.xpath("//button[contains(text(),'Login')]"));
+                driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
+                driver.wait(10000);
     }
 }
