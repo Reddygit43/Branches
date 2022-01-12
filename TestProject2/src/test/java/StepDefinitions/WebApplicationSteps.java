@@ -19,7 +19,7 @@ public class WebApplicationSteps {
     @When("click on submit")
     public void click_on_submit()throws Throwable {
         driver.findElement(By.xpath(".//input[@id='loginOrderId']")).sendKeys("105182582");
-        driver.findElement(By.xpath(".//input[@id='password']")).sendKeys("Viji_reddy43");
+        driver.findElement(By.xpath(".//input[@id='password']")).sendKeys("nai123DUI@12");
     }
     @Then("the user should be able to logged in successfully")
     public void the_user_should_be_able_to_logged_in_successfully()
